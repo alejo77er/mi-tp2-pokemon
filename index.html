@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/icono.png" />
+    <link rel="shortcut icon" href="/icono.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick y morty</title>
+    <link rel="stylesheet" href="./src/style.css"/>
+  </head>
+  <body>
+    <header>
+      <img src="/logo.png" alt="Rick and Morty" class="logo-header" />
+      <nav>
+        <a href="/">Inicio</a>
+      <a href="./favoritos.html" class="volver">Favoritos</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+       <img src="/hero.jpg" alt="Rick and Morty" class="hero-img" />
+    </section>
+    <main>
+    <!-- barra de bsuqeda y filtros -->
+     <div class="controles">
+        <div class="filtros">
+      <input type="text" id="buscador" placeholder=" Buscar Personajes"/>
+      <select id="filtroEstado">
+        <option value="">Todos</option>
+        <option value="alive">Vivo</option>
+        <option value="dead">Muerto</option>
+        <option value="unknown">Desconocido</option>
+      </select>
+      <select id="ordenar">
+        <option value="">Ordenar por..</option>
+        <option value="az">Nombre de la A-Z</option>
+        <option value="za">Nombre de la Z-A</option>
+        <option value="especie-az">Especie de la A-Z</option>
+        <option value="especie-za">Especie de la Z-A</option>
+      </select>
+      </div>
+     </div>
+
+     <div id="contenedor" class="grilla"></div>
+
+     <p id="error" class="error"></p>
+    </main>
+
+    <footer>
+      <p> --- Desarrollado por Rick-and-MortyFan-2026 --- </p>
+      <img src="/logo.png" alt="Rick and Morty" class="logo-footer" />
+    </footer>
+
+     <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
