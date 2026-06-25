@@ -46,7 +46,7 @@ estado.textContent= personaje.status;
  tarjeta.appendChild(info);
 
  tarjeta.addEventListener("click", ()=>{
-  window.location.href= "./detalles.html?id=" + personaje.id;
+  window.location.href= "/detalles.html?id=" + personaje.id;
  });
 
  contenedor.appendChild(tarjeta);

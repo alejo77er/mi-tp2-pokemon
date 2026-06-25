@@ -147,7 +147,7 @@ function mostrarPersonajes(lista){
     tarjeta.appendChild(info);
 
     tarjeta.addEventListener("click",function(){
-      window.location.href="./detalles.html?id=" + personaje.id;
+      window.location.href="/detalles.html?id=" + personaje.id;
   });
     
   contenedor.appendChild(tarjeta);
